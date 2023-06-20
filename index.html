@@ -10,21 +10,31 @@
     }
     
     header {
-      background-color: #002d62;
-      color: #fff;
+      background-color: #000;
+      color: #ffd700;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     
-    nav {
-      background-color: #002d62;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    
+    .logo h1 {
+      margin: 0;
     }
     
     nav a {
-      color: #fff;
+      color: #ffd700;
       font-weight: bold;
       margin: 0 10px;
       text-decoration: none;
@@ -53,7 +63,7 @@
       width: 150px;
       height: 150px;
       border-radius: 50%;
-      border: 2px solid #002d62;
+      border: 2px solid #ffd700;
     }
     
     .step.active img {
@@ -73,14 +83,14 @@
     }
     
     footer {
-      background-color: #002d62;
-      color: #fff;
+      background-color: #000;
+      color: #ffd700;
       padding: 20px;
       text-align: center;
     }
     
     .footer-text {
-      color: #fff;
+      color: #ffd700;
       font-size: 12px;
     }
     
@@ -116,15 +126,16 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo" width="200px">
-    <h1>Design Process</h1>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      <h1>Design Process</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
   
   <div class="container">
     <div class="section">
