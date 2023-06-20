@@ -17,13 +17,14 @@
     }
     
     nav {
-      background-color: #fff;
+      background-color: #002d62;
+      color: #fff;
       padding: 10px 0;
       text-align: center;
     }
     
     nav a {
-      color: #002d62;
+      color: #fff;
       font-weight: bold;
       margin: 0 10px;
       text-decoration: none;
@@ -77,6 +78,17 @@
       padding: 20px;
       text-align: center;
     }
+    
+    .footer-text {
+      color: #fff;
+      font-size: 12px;
+    }
+    
+    .footer-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
   </style>
   <script>
     function showStep(stepNum) {
@@ -104,6 +116,7 @@
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Logo" width="200px">
     <h1>Design Process</h1>
   </header>
   
@@ -156,7 +169,8 @@
   </div>
   
   <footer>
-    &copy; 2023 Your Company Name. All rights reserved.
+    <img src="footer-logo.png" alt="Footer Logo" class="footer-logo">
+    <span class="footer-text">&copy; 2023 Your Company Name. All rights reserved.</span>
   </footer>
 </body>
 </html>
