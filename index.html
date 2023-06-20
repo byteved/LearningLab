@@ -22,13 +22,6 @@
       text-align: center;
     }
     
-    nav a {
-      color: #333;
-      font-weight: bold;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    
     .container {
       margin: 20px;
     }
@@ -98,19 +91,26 @@
   </header>
   
   <nav>
-    <a href="#step1" onclick="showStep(1)">Step 1</a>
-    <a href="#step2" onclick="showStep(2)">Step 2</a>
-    <a href="#step3" onclick="showStep(3)">Step 3</a>
-    <a href="#step4" onclick="showStep(4)">Step 4</a>
-    <a href="#step5" onclick="showStep(5)">Step 5</a>
+    <div class="step active" id="step1" onclick="showStep(1)">
+      <img src="image1.jpg" alt="Step 1">
+    </div>
+    <div class="step" id="step2" onclick="showStep(2)">
+      <img src="image2.jpg" alt="Step 2">
+    </div>
+    <div class="step" id="step3" onclick="showStep(3)">
+      <img src="image3.jpg" alt="Step 3">
+    </div>
+    <div class="step" id="step4" onclick="showStep(4)">
+      <img src="image4.jpg" alt="Step 4">
+    </div>
+    <div class="step" id="step5" onclick="showStep(5)">
+      <img src="image5.jpg" alt="Step 5">
+    </div>
   </nav>
   
   <div class="container">
     <div class="section">
       <h2>Step 1: Empathize</h2>
-      <div class="step active" id="step1">
-        <img src="image1.jpg" alt="Step 1" onclick="showStep(1)">
-      </div>
       <div class="content active" id="content1">
         <p>Step 1 content goes here...</p>
       </div>
@@ -118,9 +118,6 @@
     
     <div class="section">
       <h2>Step 2: Define</h2>
-      <div class="step" id="step2">
-        <img src="image2.jpg" alt="Step 2" onclick="showStep(2)">
-      </div>
       <div class="content" id="content2">
         <p>Step 2 content goes here...</p>
       </div>
@@ -128,9 +125,6 @@
     
     <div class="section">
       <h2>Step 3: Ideate</h2>
-      <div class="step" id="step3">
-        <img src="image3.jpg" alt="Step 3" onclick="showStep(3)">
-      </div>
       <div class="content" id="content3">
         <p>Step 3 content goes here...</p>
       </div>
@@ -138,9 +132,6 @@
     
     <div class="section">
       <h2>Step 4: Prototype</h2>
-      <div class="step" id="step4">
-        <img src="image4.jpg" alt="Step 4" onclick="showStep(4)">
-      </div>
       <div class="content" id="content4">
         <p>Step 4 content goes here...</p>
       </div>
@@ -148,9 +139,6 @@
     
     <div class="section">
       <h2>Step 5: Test</h2>
-      <div class="step" id="step5">
-        <img src="image5.jpg" alt="Step 5" onclick="showStep(5)">
-      </div>
       <div class="content" id="content5">
         <p>Step 5 content goes here...</p>
       </div>
