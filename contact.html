@@ -153,6 +153,7 @@
   </header>
   
   <div class="container">
+    <canvas id="drawCanvas"></canvas>
     <div class="section">
       <h2>Gallery</h2>
       <div class="embed-container">
@@ -202,15 +203,8 @@
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mouseup', stopDrawing);
     canvas.addEventListener('mouseout', stopDrawing);
-
-    canvas.addEventListener('mouseenter', (e) => {
-    if (e.target.closest('.header-content')) {
-    stopDrawing();
-    }
-  });
   </script>
   <footer>
-    <canvas id="drawCanvas"></canvas>
     <span class="footer-text">&copy; 2023 Ved Nakum. All rights reserved.</span>
   </footer>
 </body>
