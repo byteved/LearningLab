@@ -131,8 +131,6 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
       z-index: 0; /* Set a lower value to position it behind the embedded album */
     }
   </style>
@@ -159,9 +157,9 @@
       <h2>Gallery</h2>
       <div class="embed-container">
     <iframe src="https://www.flickr.com/photos/198586407@N07/albums/72177720309232619/player" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-    <canvas id="drawCanvas"></canvas>
   </div>
   <script>
+    const headerContent = document.querySelector('.header-content');
     // Get the canvas element
     const canvas = document.getElementById('drawCanvas');
     const ctx = canvas.getContext('2d');
@@ -174,7 +172,7 @@
 
     // Styling the canvas
     ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
-    ctx.strokeStyle = 'black';
+    ctx.strokeStyle = 'white';
     ctx.lineWidth = 3;
 
     // Drawing functionality
@@ -204,8 +202,15 @@
     canvas.addEventListener('mousemove', draw);
     canvas.addEventListener('mouseup', stopDrawing);
     canvas.addEventListener('mouseout', stopDrawing);
+
+    canvas.addEventListener('mouseenter', (e) => {
+    if (e.target.closest('.header-content')) {
+    stopDrawing();
+    }
+  });
   </script>
   <footer>
+    <canvas id="drawCanvas"></canvas>
     <span class="footer-text">&copy; 2023 Ved Nakum. All rights reserved.</span>
   </footer>
 </body>
